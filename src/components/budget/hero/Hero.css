@@ -1,0 +1,68 @@
+.hero_budget {}
+
+.hero_budget-bg {
+    height: 350px;
+    position: relative;
+}
+.hero_budget-bg::after {
+    content: '';
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gradient-bg-transparent);
+}
+.hero_budget-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero_budget_numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -150px;
+}
+.hero_budget_numbers .budget_numbers {
+    background: var(--gradient-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 230px;
+    min-height: 150px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    padding: 1rem;
+    z-index: 1;
+}
+.hero_budget_numbers .budget_numbers:nth-child(1) {
+    background-color: var(--color-primary);
+}
+.hero_budget_numbers .budget_numbers:nth-child(2) {
+    background-color: var(--color-success);
+}
+.hero_budget_numbers .budget_numbers:nth-child(3) {
+    background-color: var(--color-error);
+}
+.budget_numbers-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.budget_numbers-money > div {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.budget_numbers-money > small {
+    color: var(--color-text-light);
+}
